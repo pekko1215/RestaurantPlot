@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestaurantPlot</title>
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/static/style/application.css">
+</head>
+
+<body>
+    <div id="menu">
+        <h2>みんなのPlot</h2>
+        <div id="plotList">
+            <!-- <div class="plot">
+                <div class="plot-name">
+                    松屋 三鷹店
+                </div>
+                <div class="plot-comment">
+                    なんと味噌汁がついてくる。うまい
+                </div>
+                <div class="plot-createby">
+                    ブリザード植田
+                </div>
+            </div> -->
+        </div>
+        <h2>Plotを投稿する</h2>
+        <input id="name" placeholder="店名">
+        <textarea id="comment" cols="35" rows="5" placeholder="コメント、店の感想など"></textarea>
+        <h4>オレンジのマーカーで、場所を指定してください</h4>
+        <input id="latitude" disabled>
+        <input id="longitude" disabled><br>
+        <button id="moveCenter">画面中央へ移動</button><br>
+        <button id="postPlot">投稿</button>
+    </div>
+    <div id="map"></div>
+    <script src="/static/script/application.js"></script>
+</body>
+
+</html>
